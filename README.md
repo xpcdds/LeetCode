@@ -1,2 +1,2 @@
 # LeetCode
-刷题
+python 刷题
