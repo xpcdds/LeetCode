@@ -1,3 +1,4 @@
+#两重循环
 def twoSum(nums, target):
     #flag = 0
     for i in range(0,len(nums)):
@@ -9,3 +10,14 @@ def twoSum(nums, target):
 #nums = [10, 20, 30, 40, 50, 60, 90 , 100]
 #target = 90
 #twoSum(nums, target)
+
+#哈希表
+def twoSum(nums, target):
+    dict1 = {}
+    for i in range(0, len(nums)):
+        num = target - nums[i]
+        if num not in dict1:
+            dict1[nums[i]] = i 
+            print(dict1)
+        else:
+            return [dict1[num],i]
